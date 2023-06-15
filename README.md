@@ -14,12 +14,15 @@ The [json.vb](json.vb) code file is uncompiled. Follow these instructions to add
 Creates a new [XDocument](https://docs.microsoft.com/en-us/dotnet/api/system.xml.linq.xdocument) from a JSON literal
 
 ``` vb
-Public Shared Function Parse(ByVal source As String) As XDocument
+Public Shared Function Parse(ByVal source As String, Optional culuture As CultureInfo) As XDocument
 ```
 
 ### Parameters
 `source` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 A string that contains JSON.
+
+`culture`
+And optional parameter to specify the culture. This is used for culture specific parsing (e.g. commas used as decimal place)
 
 ### Returns
 [XDocument](https://docs.microsoft.com/en-us/dotnet/api/system.xml.linq.xdocument)
@@ -225,4 +228,13 @@ Console.WriteLine(parsedJson.ToString())
 
 End Module
   ```
-Fiddle: https://dotnetfiddle.net/bYcMYm
+Fiddle: https://dotnetfiddle.net/FqqPnW
+
+## Donate
+Show your support! Your (non-tax deductible) donation of Monero cryptocurrency is a sign of solidarity among web developers.
+
+Being self taught, I have come a long way over the years. I certainly do not intend on making a living from this free feature, but my hope is to earn a few dollars to validate all of my hard work.
+
+Monero Address: 447SPi8XcexZnF7kYGDboKB6mghWQzRfyScCgDP2r4f2JJTfLGeVcFpKEBT9jazYuW2YG4qn51oLwXpQJ3oEXkeXUsd6TCF
+
+![447SPi8XcexZnF7kYGDboKB6mghWQzRfyScCgDP2r4f2JJTfLGeVcFpKEBT9jazYuW2YG4qn51oLwXpQJ3oEXkeXUsd6TCF](monero.png)
